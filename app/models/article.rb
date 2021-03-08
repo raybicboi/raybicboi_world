@@ -1,7 +1,7 @@
 class Article < ApplicationRecord
 
     #relationships
-    belongs_to :category
+    has_one :category
 
     # scopes
     scope :alphabetical, -> { order('title') }
